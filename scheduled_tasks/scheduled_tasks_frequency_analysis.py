@@ -104,7 +104,7 @@ if __name__ == "__main__":
         print("Conducts frequency analysis of exported scheduled task xml files. Place exported XML files"
               " within directories indicating which system the data is from, and point this script at their "
               "root folder.")
-        print("Usage: input_dir output_dir")
+        print("\nUsage: input_dir output_dir")
         print("\nExample:")
         print("-" * 50)
         print(r"c:\exported_scheduled_tasks_xml c:\results")
