@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from Registry import Registry
 import cPickle as pickle
 import os
