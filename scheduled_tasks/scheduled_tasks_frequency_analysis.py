@@ -89,7 +89,7 @@ def frequency_analysis(tasks=None):
     for command, frequency in dict.items(commands):
         results.append([command, frequency])
 
-    sorted_results = sorted(results, key=itemgetter(1), reverse=True)
+    sorted_results = sorted(results, key=itemgetter(1))
 
     with open(os.path.join(output_dir, "scheduled_tasks.csv"), "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
