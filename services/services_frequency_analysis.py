@@ -60,7 +60,7 @@ def frequency_analysis(services_to_process=None):
     for path, frequency in dict.items(paths):
         results.append([path, frequency])
 
-    sorted_results = sorted(results, key=itemgetter(1), reverse=True)
+    sorted_results = sorted(results, key=itemgetter(1))
 
     with open(os.path.join(output_dir, "services.csv"), "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
